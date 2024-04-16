@@ -1,0 +1,10 @@
+version: '3'
+services:
+  java:
+    container_name: javaApp
+    image: eclipse-temurin:17-jdk
+    tty: true
+    volumes:
+      - ../:/workspace:cache
+    ports:
+      - 8080:8080
